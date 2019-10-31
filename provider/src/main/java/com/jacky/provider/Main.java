@@ -15,15 +15,15 @@ import java.util.Scanner;
 @EnableEurekaClient
 public class Main {
     //单点启动
-    public static void main(String[] args) {
-        new SpringApplicationBuilder(Main.class).run(args);
-    }
-    //多个启动
 //    public static void main(String[] args) {
-//        //读取从控制台输入的端口，避免端口冲突
-//        Scanner scanner = new Scanner(System.in);
-//        String file = scanner.nextLine();
-//        new SpringApplicationBuilder(Main.class).profiles(file).run(args);
+//        new SpringApplicationBuilder(Main.class).run(args);
 //    }
+    //多个启动
+    public static void main(String[] args) {
+        //读取从控制台输入的端口，避免端口冲突
+        Scanner scanner = new Scanner(System.in);
+        String file = scanner.nextLine();
+        new SpringApplicationBuilder(Main.class).profiles(file).run(args);
+    }
 
 }

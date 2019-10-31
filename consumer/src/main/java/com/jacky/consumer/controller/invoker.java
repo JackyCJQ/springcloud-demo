@@ -54,6 +54,11 @@ public class invoker {
             EurekaDiscoveryClient.EurekaServiceInstance esi = (EurekaDiscoveryClient.EurekaServiceInstance) service;
             InstanceInfo info = esi.getInstanceInfo();
             System.out.println(info.getAppName() + "---" + info.getInstanceId() + "---" + info.getStatus());
+            //获取携带的元数据
+            if (info.getAppName().equalsIgnoreCase("PROVIDER-SERVICE")) {
+                System.out.println("name:" + info.getMetadata().get("name"));
+
+            }
         }
         return "";
     }
