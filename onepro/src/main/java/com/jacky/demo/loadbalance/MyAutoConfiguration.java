@@ -1,4 +1,4 @@
-package com.jacky.consumer.loadbalance;
+package com.jacky.demo.loadbalance;
 
 import org.springframework.beans.factory.SmartInitializingSingleton;
 import org.springframework.beans.factory.annotation.Autowired;

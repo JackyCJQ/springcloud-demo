@@ -8,6 +8,8 @@
         <module>provider</module>
         <module>consumer</module>
         <module>rest-provider</module>
+        <module>onepro</module>
+        <module>FirstFeign</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
