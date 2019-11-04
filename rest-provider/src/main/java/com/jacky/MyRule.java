@@ -31,11 +31,11 @@ public class MyRule implements IRule {
 
     @Override
     public void setLoadBalancer(ILoadBalancer iLoadBalancer) {
-
+        this.lb = iLoadBalancer;
     }
 
     @Override
     public ILoadBalancer getLoadBalancer() {
-        return null;
+        return lb;
     }
 }

@@ -9,3 +9,9 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 server:
   port: 10001
+
+#已配置文件的方式配置某个服务的路由和ping的规则
+#provider-service:
+#   ribbon:
+#     NFLoadBalancerRuleClassName: com.jacky.consumer.ribbon.MyRule
+#     NFLoadBalancerPingClassName: com.jacky.consumer.ribbon.MyPing

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthController {
 
-    public static boolean canVisitDb = false;
+    public static boolean canVisitDb = true;
 
     @RequestMapping(value = "/db/{canVisitDb}")
     public String setConnectState(@PathVariable("canVisitDb") Boolean canVisitDb) {
